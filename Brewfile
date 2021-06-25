@@ -17,6 +17,7 @@ brew 'zsh'
 brew 'htop'
 brew 'tree'
 brew 'mas'
+brew 'dockutil'
 
 # Programming language prerequisites and package managers
 brew 'libyaml' # should come after openssl
