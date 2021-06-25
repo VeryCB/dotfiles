@@ -19,7 +19,7 @@ Setup and maintain my Mac.
     ```zsh
     git clone git@github.com:verycb/dotfiles.git ~/Dotfiles
     ```
-4. Run the bootstrap scriptwith:
+4. Run the bootstrap script with:
 
     ```zsh
     cd ~/Dotfiles && source bootstrap.sh
