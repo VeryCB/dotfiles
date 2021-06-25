@@ -1,0 +1,6 @@
+--color
+--ignore-case
+--break
+--heading
+--type-add=css=scss
+--type-add=javascript=vue
