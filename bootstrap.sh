@@ -2,12 +2,12 @@
 
 echo "Bootstrapping your Mac..."
 
-if test ! $(which omz); then
+if [ ! -d "$HOME/.oh-my-zsh" ]; then
   echo "Installing oh-my-zsh..."
   /bin/sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/HEAD/tools/install.sh)"
 fi
 
-if test ! $(which brew); then
+if [ ! -e "/usr/local/bin/brew" ]; then
   echo "Installing Homebrew..."
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 fi
