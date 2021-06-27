@@ -5,6 +5,7 @@ tap 'homebrew/bundle'
 tap 'homebrew/core'
 tap 'homebrew/services'
 tap 'universal-ctags/universal-ctags'
+tap 'ethereum/ethereum'
 
 # System
 brew 'universal-ctags', args: ['HEAD']
@@ -23,6 +24,7 @@ brew 'dockutil'
 brew 'libyaml' # should come after openssl
 brew 'coreutils'
 brew 'yarn'
+brew 'solidity'
 cask 'gpg-suite'
 
 # Common Apps
