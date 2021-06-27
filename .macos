@@ -51,21 +51,6 @@ defaults write com.apple.Finder FXPreferredViewStyle -string Nlsv
 # defaults write com.apple.Finder FXPreferredViewStyle -string Flwv
 
 ####################
-##     Menubar    ##
-####################
-
-# Battery Percentage in status bar
-defaults write com.apple.menuextra.battery ShowPercent -bool true
-
-# Show Bluetooth in menu bar
-defaults write com.apple.controlcenter "NSStatusItem Visible Bluetooth" -bool true
-defaults write ~/Library/Preferences/ByHost/com.apple.controlcenter.plist Bluetooth -int 18
-
-# Show volume in menu bar
-defaults write com.apple.controlcenter "NSStatusItem Visible Sound" -bool true
-defaults write ~/Library/Preferences/ByHost/com.apple.controlcenter.plist Sound -int 18
-
-####################
 ##      Dock      ##
 ####################
 
