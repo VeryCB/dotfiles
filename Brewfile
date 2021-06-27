@@ -25,6 +25,7 @@ brew 'libyaml' # should come after openssl
 brew 'coreutils'
 brew 'yarn'
 brew 'solidity'
+brew 'asdf'
 cask 'gpg-suite'
 
 # Common Apps
