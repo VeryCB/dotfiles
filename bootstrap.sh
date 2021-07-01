@@ -41,3 +41,6 @@ vim +PluginInstall +qall
 
 echo "Setting up macOS preferences..."
 source $HOME/Dotfiles/.macos
+
+echo "Setting up default web browser..."
+defaultbrowser chrome

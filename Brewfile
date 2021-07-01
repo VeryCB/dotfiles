@@ -19,6 +19,7 @@ brew 'htop'
 brew 'tree'
 brew 'mas'
 brew 'dockutil'
+brew 'defaultbrowser'
 
 # Programming language prerequisites and package managers
 brew 'libyaml' # should come after openssl
