@@ -1,6 +1,8 @@
 [user]
   name = VeryCB
   email = imcaibin@gmail.com
+[init]
+  defaultBranch = main
 [color]
   ui = auto
 [color "branch"]
