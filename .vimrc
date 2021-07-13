@@ -51,6 +51,7 @@ set guifont=Monaco:h12
 
 " ========== Plugin ==========
 
+" install vim-plug
 let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
 if empty(glob(data_dir . '/autoload/plug.vim'))
   silent execute '!curl -fLo '.data_dir.'/autoload/plug.vim --create-dirs  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
@@ -66,6 +67,7 @@ Plug 'nathangrigg/vim-beancount'
 Plug 'tomlion/vim-solidity'
 Plug 'prettier/vim-prettier', {
   \ 'do': 'yarn install && yarn add prettier-plugin-solidity',
+  \ 'branch': 'release/1.x',
   \ 'for': [
     \ 'javascript',
     \ 'typescript',
@@ -118,7 +120,7 @@ let g:go_fmt_command = "goimports"
 let g:go_fmt_autosave = 1
 
 let g:prettier#autoformat = 0
-autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.yaml,*.html,*.sol PrettierAsync
+autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.yaml,*.html,*.sol Prettier
 
 " run :GoBuild or :GoTestCompile based on the go file
 function! s:build_go_files()

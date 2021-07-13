@@ -28,7 +28,6 @@ brew 'coreutils'
 brew 'yarn'
 brew 'solidity'
 brew 'asdf'
-brew 'prettier'
 cask 'gpg-suite'
 
 # Common Apps
