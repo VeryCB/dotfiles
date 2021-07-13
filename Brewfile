@@ -47,3 +47,4 @@ brew 'redis', restart_service: :changed
 
 # Mac App Store
 mas 'Bear', id: 1091189122
+mas 'Twitter', id: 1482454543
