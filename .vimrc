@@ -66,8 +66,7 @@ Plug 'fatih/vim-go'
 Plug 'nathangrigg/vim-beancount'
 Plug 'tomlion/vim-solidity'
 Plug 'prettier/vim-prettier', {
-  \ 'do': 'yarn install && yarn add prettier-plugin-solidity',
-  \ 'branch': 'release/1.x',
+  \ 'do': 'yarn install',
   \ 'for': [
     \ 'javascript',
     \ 'typescript',
@@ -79,12 +78,9 @@ Plug 'prettier/vim-prettier', {
     \ 'vue',
     \ 'python',
     \ 'ruby',
-    \ 'html',
-    \ 'solidity'] }
+    \ 'html'] }
 Plug 'tomasr/molokai'
 call plug#end()
-
-let g:prettier#exec_cmd_path = '~/.vim/plugged/vim-prettier/node_modules/.bin/prettier'
 
 silent! colorscheme molokai
 
@@ -120,7 +116,8 @@ let g:go_fmt_command = "goimports"
 let g:go_fmt_autosave = 1
 
 let g:prettier#autoformat = 0
-autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.yaml,*.html,*.sol Prettier
+let g:prettier#exec_cmd_path = "/usr/local/bin/prettier"
+autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.yaml,*.html PrettierAsync
 
 " run :GoBuild or :GoTestCompile based on the go file
 function! s:build_go_files()
