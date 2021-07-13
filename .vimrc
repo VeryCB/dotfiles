@@ -51,31 +51,40 @@ set guifont=Monaco:h12
 
 " ========== Plugin ==========
 
-" Vundle
-filetype off
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
+if empty(glob(data_dir . '/autoload/plug.vim'))
+  silent execute '!curl -fLo '.data_dir.'/autoload/plug.vim --create-dirs  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
 
-" let Vundle manage Vundle
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'mattn/emmet-vim'
-Plugin 'pangloss/vim-javascript'
-Plugin 'tomasr/molokai'
-Plugin 'posva/vim-vue'
-Plugin 'fatih/vim-go'
-Plugin 'prettier/vim-prettier'
-Plugin 'nathangrigg/vim-beancount'
-Plugin 'tomlion/vim-solidity'
+call plug#begin('~/.vim/plugged')
+Plug 'mattn/emmet-vim'
+Plug 'pangloss/vim-javascript'
+Plug 'posva/vim-vue'
+Plug 'fatih/vim-go'
+Plug 'nathangrigg/vim-beancount'
+Plug 'tomlion/vim-solidity'
+Plug 'prettier/vim-prettier', {
+  \ 'do': 'yarn install && yarn add prettier-plugin-solidity',
+  \ 'for': [
+    \ 'javascript',
+    \ 'typescript',
+    \ 'css',
+    \ 'scss',
+    \ 'json',
+    \ 'graphql',
+    \ 'markdown',
+    \ 'vue',
+    \ 'python',
+    \ 'ruby',
+    \ 'html',
+    \ 'solidity'] }
+Plug 'tomasr/molokai'
+call plug#end()
 
-call vundle#end()
-
-"allow plugin and indent function
-filetype plugin indent on
+let g:prettier#exec_cmd_path = '~/.vim/plugged/vim-prettier/node_modules/.bin/prettier'
 
 silent! colorscheme molokai
-
-" F10 for nerdtree
-nnoremap <silent> <F10> :NERDTreeToggle<CR>
 
 " ========== Keys ==========
 
@@ -109,7 +118,7 @@ let g:go_fmt_command = "goimports"
 let g:go_fmt_autosave = 1
 
 let g:prettier#autoformat = 0
-autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.yaml,*.html PrettierAsync
+autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.yaml,*.html,*.sol PrettierAsync
 
 " run :GoBuild or :GoTestCompile based on the go file
 function! s:build_go_files()
