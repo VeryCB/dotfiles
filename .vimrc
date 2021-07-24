@@ -65,6 +65,7 @@ Plug 'posva/vim-vue'
 Plug 'fatih/vim-go'
 Plug 'nathangrigg/vim-beancount'
 Plug 'tomlion/vim-solidity'
+Plug 'dense-analysis/ale'
 Plug 'prettier/vim-prettier', {
   \ 'do': 'yarn install',
   \ 'for': [

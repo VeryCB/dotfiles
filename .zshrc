@@ -101,3 +101,5 @@ export EDITOR='vim'
 # use vi shortcuts as shell shortcuts
 bindkey -v
 bindkey "^R" history-incremental-search-backward
+
+. /usr/local/opt/asdf/asdf.sh
