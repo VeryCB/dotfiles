@@ -21,6 +21,7 @@ brew 'mas'
 brew 'dockutil'
 brew 'defaultbrowser'
 brew 'z'
+brew 'ImageMagick'
 cask 'rar'
 
 # Programming language prerequisites and package managers
