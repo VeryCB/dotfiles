@@ -29,6 +29,7 @@ brew 'libyaml' # should come after openssl
 brew 'coreutils'
 brew 'yarn'
 brew 'solidity'
+brew 'typescript'
 brew 'asdf'
 cask 'gpg-suite'
 
