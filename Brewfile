@@ -43,7 +43,7 @@ cask 'spectacle'
 cask 'wechat'
 cask 'discord'
 cask 'telegram'
-cask 'paw'
+cask 'setapp'
 
 # Databases
 brew 'postgres', restart_service: :changed
