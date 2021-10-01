@@ -67,7 +67,7 @@ Plug 'nathangrigg/vim-beancount'
 Plug 'tomlion/vim-solidity'
 Plug 'dense-analysis/ale'
 Plug 'prettier/vim-prettier', {
-  \ 'do': 'yarn install',
+  \ 'do': 'yarn install && yarn add prettier-plugin-solidity',
   \ 'for': [
     \ 'javascript',
     \ 'typescript',
@@ -79,6 +79,7 @@ Plug 'prettier/vim-prettier', {
     \ 'vue',
     \ 'python',
     \ 'ruby',
+    \ 'solidity',
     \ 'html'] }
 Plug 'tomasr/molokai'
 call plug#end()
@@ -117,8 +118,8 @@ let g:go_fmt_command = "goimports"
 let g:go_fmt_autosave = 1
 
 let g:prettier#autoformat = 0
-let g:prettier#exec_cmd_path = "/usr/local/bin/prettier"
-autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.yaml,*.html PrettierAsync
+let g:prettier#exec_cmd_path = '~/.vim/plugged/vim-prettier/node_modules/.bin/prettier'
+autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.yaml,*.html,*.sol PrettierAsync
 
 " run :GoBuild or :GoTestCompile based on the go file
 function! s:build_go_files()
