@@ -44,6 +44,10 @@ cask 'wechat'
 cask 'discord'
 cask 'telegram'
 cask 'setapp'
+cask 'microsoft-word'
+cask 'microsoft-excel'
+cask 'microsoft-outlook'
+cask 'slack'
 
 # Databases
 brew 'postgres', restart_service: :changed
