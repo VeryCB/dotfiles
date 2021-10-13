@@ -49,6 +49,7 @@ cask 'microsoft-excel'
 cask 'microsoft-outlook'
 cask 'slack'
 cask 'visual-studio-code'
+cask 'aws-vault'
 
 # Databases
 brew 'postgres', restart_service: :changed
