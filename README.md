@@ -16,7 +16,7 @@ Setup and maintain my Mac.
     ```
 3. Generate a new SSH key:
     ```zsh
-    curl https://raw.githubusercontent.com/verycb/dotfiles/HEAD/ssh.sh | sh -s "<your-email-address>"
+    curl https://raw.githubusercontent.com/verycb/dotfiles/HEAD/ssh.sh | sh -s "<email-address-1>" "<email-address-2>"
     ```
 4. Clone this repo to `~/Dotfiles`:
     ```zsh
