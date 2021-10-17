@@ -1,1 +1,9 @@
 Host github.com
+  HostName github.com
+  IdentityFile ~/.ssh/id_ed25519_verycb
+  IdentitiesOnly yes
+
+Host github-shepeth
+  HostName github.com
+  IdentityFile ~/.ssh/id_ed25519_shepeth
+  IdentitiesOnly yes
