@@ -47,6 +47,7 @@ cask 'microsoft-word'
 cask 'microsoft-excel'
 cask 'microsoft-outlook'
 cask 'slack'
+cask 'zoom'
 cask 'visual-studio-code'
 cask 'aws-vault'
 
