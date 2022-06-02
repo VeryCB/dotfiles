@@ -103,3 +103,5 @@ bindkey -v
 bindkey "^R" history-incremental-search-backward
 
 . /usr/local/opt/asdf/asdf.sh
+
+export PATH="$PATH:/Users/verycb/.foundry/bin"

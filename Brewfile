@@ -6,6 +6,7 @@ tap 'homebrew/core'
 tap 'homebrew/services'
 tap 'universal-ctags/universal-ctags'
 tap 'ethereum/ethereum'
+tap 'tenderly/tenderly'
 
 # System
 brew 'universal-ctags', args: ['HEAD']
@@ -31,6 +32,7 @@ brew 'yarn'
 brew 'solidity'
 brew 'typescript'
 brew 'asdf'
+brew 'tenderly'
 cask 'gpg-suite'
 
 # Common Apps
@@ -48,8 +50,10 @@ cask 'microsoft-excel'
 cask 'microsoft-outlook'
 cask 'slack'
 cask 'zoom'
+cask 'telegram'
 cask 'visual-studio-code'
 cask 'aws-vault'
+cask 'resucetime'
 
 # Databases
 brew 'postgres', restart_service: :changed
