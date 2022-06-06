@@ -4,12 +4,11 @@ tap 'homebrew/cask-versions'
 tap 'homebrew/bundle'
 tap 'homebrew/core'
 tap 'homebrew/services'
-tap 'universal-ctags/universal-ctags'
 tap 'ethereum/ethereum'
 tap 'tenderly/tenderly'
+tap 'hpedrorodrigues/homebrew-tools'
 
 # System
-brew 'universal-ctags', args: ['HEAD']
 brew 'git'
 brew 'openssl'
 brew 'the_silver_searcher'
@@ -19,7 +18,6 @@ brew 'zsh'
 brew 'htop'
 brew 'tree'
 brew 'mas'
-brew 'dockutil'
 brew 'defaultbrowser'
 brew 'z'
 brew 'ImageMagick'
@@ -53,7 +51,9 @@ cask 'zoom'
 cask 'telegram'
 cask 'visual-studio-code'
 cask 'aws-vault'
-cask 'resucetime'
+cask 'rescuetime'
+cask 'dockutil'
+cask 'pomotodo'
 
 # Databases
 brew 'postgres', restart_service: :changed
