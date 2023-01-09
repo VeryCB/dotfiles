@@ -105,3 +105,6 @@ bindkey "^R" history-incremental-search-backward
 . /usr/local/opt/asdf/asdf.sh
 
 export PATH="$PATH:/Users/verycb/.foundry/bin"
+export PATH="$PATH:/Users/verycb/.asdf/installs/rust/1.61.0/bin"
+
+export PATH="$PATH:/Users/verycb/.helios/bin"

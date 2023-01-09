@@ -66,6 +66,8 @@ Plug 'fatih/vim-go'
 Plug 'nathangrigg/vim-beancount'
 Plug 'tomlion/vim-solidity'
 Plug 'dense-analysis/ale'
+Plug 'editorconfig/editorconfig-vim'
+Plug 'hashivim/vim-terraform'
 Plug 'prettier/vim-prettier', {
   \ 'do': 'yarn install && yarn add prettier-plugin-solidity',
   \ 'for': [

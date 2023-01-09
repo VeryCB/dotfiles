@@ -7,6 +7,7 @@ tap 'homebrew/services'
 tap 'ethereum/ethereum'
 tap 'tenderly/tenderly'
 tap 'hpedrorodrigues/homebrew-tools'
+tap 'hashicorp/tap'
 
 # System
 brew 'git'
@@ -32,6 +33,7 @@ brew 'typescript'
 brew 'asdf'
 brew 'tenderly'
 cask 'gpg-suite'
+brew 'hashicorp/tap/terraform'
 
 # Common Apps
 cask 'iterm2'
@@ -61,4 +63,3 @@ brew 'redis', restart_service: :changed
 
 # Mac App Store
 mas 'Bear', id: 1091189122
-mas 'Twitter', id: 1482454543

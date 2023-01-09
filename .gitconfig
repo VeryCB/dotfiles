@@ -1,6 +1,7 @@
 [user]
   name = VeryCB
   email = imcaibin@gmail.com
+	signingkey = C1CC3537C6353370
 [init]
   defaultBranch = main
 [color]
@@ -174,3 +175,7 @@
   human = name-rev --name-only --refs=refs/heads/*
   serve = !git daemon --reuseaddr --verbose  --base-path=. --export-all ./.git
   snapshot = !git stash save "snapshot: $(date)" && git stash apply "stash@{0}"
+[gpg "x509"]
+	program = gpg
+[commit]
+	gpgsign = true
