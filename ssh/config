@@ -7,9 +7,3 @@ Host github-shepeth
   HostName github.com
   IdentityFile ~/.ssh/id_ed25519_shepeth
   IdentitiesOnly yes
-
-
-Host github-yellow
-  HostName github.com
-  IdentityFile ~/.ssh/id_ed25519_yellow
-  IdentitiesOnly yes

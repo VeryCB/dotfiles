@@ -61,8 +61,3 @@ cask 'grammarly'
 # Databases
 brew 'postgres', restart_service: :changed
 brew 'redis', restart_service: :changed
-
-# Mac App Store
-mas 'Bear', id: 1091189122
-mas 'Spark', id: 1176895641
-mas 'Reeder', id: 1529445840
