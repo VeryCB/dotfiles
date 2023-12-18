@@ -68,12 +68,10 @@ dockutil --no-restart --add "/Applications/Google Chrome.app"
 dockutil --no-restart --add "/Applications/iTerm.app"
 dockutil --no-restart --add "/Applications/Spark.app"
 dockutil --no-restart --add "/Applications/Reeder.app"
-dockutil --no-restart --add "/Applications/Bear.app"
-dockutil --no-restart --add "/Applications/Slack.app"
+dockutil --no-restart --add "/Applications/Obsidian.app"
 dockutil --no-restart --add "/Applications/Discord.app"
 dockutil --no-restart --add "/Applications/WeChat.app"
 dockutil --no-restart --add "/Applications/Telegram.app"
-dockutil --no-restart --add "/Applications/zoom.us.app"
 
 for app in "Finder" "Dock" "SystemUIServer";
 do
