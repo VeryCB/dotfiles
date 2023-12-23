@@ -105,3 +105,5 @@ bindkey "^R" history-incremental-search-backward
 . /usr/local/opt/asdf/libexec/asdf.sh
 
 export PATH="$PATH:/Users/verycb/.foundry/bin"
+
+eval "$(/opt/homebrew/bin/brew shellenv)"
